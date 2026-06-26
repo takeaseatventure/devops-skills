@@ -1,6 +1,15 @@
 ---
 name: cron-doctor
-description: Diagnose and validate cron expressions. Use when a user writes, edits, or deploys a cron schedule, or when debugging a job that fires at the wrong time or never fires. Catches impossible schedules (Feb 30), OR-semantics traps (dom+dow), midnight spikes, and uneven step drift — the silent failures that pass syntax checks but break in production.
+description: "Diagnose and validate cron expressions before they ship. Catches the five silent death-traps: impossible dates that never fire, OR-semantics that fire too often, midnight spikes, uneven step drift, and leap-year February 29."
+category: devops
+risk: safe
+source: self
+source_type: self
+date_added: "2026-06-26"
+author: takeaseat
+tags: [cron, crontab, scheduling, devops, debugging, kubernetes, validation]
+tools: [claude, cursor, codex, gemini, opencode]
+license: "MIT"
 ---
 
 # cron-doctor
